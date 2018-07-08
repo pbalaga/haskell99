@@ -7,6 +7,11 @@
             "label": "run",
             "type": "shell",
             "command": "stack build && stack exec Logimaster-exe"
+        },
+        {
+            "label": "test and coverage",
+            "type": "shell",
+            "command": "stack test --coverage && firefox $(stack path --local-hpc-root)/index.html"
         }
     ]
 }
